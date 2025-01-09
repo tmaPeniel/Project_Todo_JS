@@ -1,1 +1,74 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Jost', sans-serif;
+}
+
+.background{
+    background: linear-gradient(#517FF6, #253663);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #ffffff80;
+    border-radius: 30px;
+    box-sizing: border-box;
+    width: 840px;
+    height: 770;
+}
+
+.main h1{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.main .nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin: 20px;
+}
+
+.main .nav .add{
+    width: 50%
+}
+
+.main .nav .filter{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    margin-left: 40px;
+}
+
+button{
+    border: none;
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 18px;
+    background-color: #ffffffBF;
+}
+
+button.active{
+    background-color: #517ff6;
+}
+
+button.add-task{
+    width: 350px;
+    height: 50px;
+}
