@@ -115,4 +115,5 @@ form .col2 .button{
 
 .button-cancel a {
     color: black;
+    text-decoration: none;
 }
