@@ -5,3 +5,114 @@
     box-sizing: border-box;
     font-family: 'Jost', sans-serif;
 }
+
+textarea {
+    resize: none; 
+}
+
+.background{
+    background: linear-gradient(#517FF6, #253663);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    background-color: #ffffff80;
+    border-radius: 30px;
+    box-sizing: border-box;
+    width: 1040px;
+    height: 560px;
+}
+
+.main h1{
+    color: #ffffff;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.form{
+    margin: 40px 0;
+    width: 100%;
+    height: auto;
+    background-color: #ffff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.form h4{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+form .col1,
+form .col2{
+    display:grid;
+    width: 45%;
+}
+
+form .col2{
+    grid-template-rows: repeat(5, 1fr);
+}
+
+form .col1 .name, 
+form .col1 .description, 
+form .col1 .category,
+form .col1 .date,
+form .col1 .time,
+form .col2 .priority,
+form .col2 .fullfillment{
+    display: inherit;
+    grid-template-columns: 1fr 2fr;
+    margin: 10px;
+}
+
+form .col2 .button{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-row: 5;
+}
+
+.button-save, .button-cancel{
+    padding: 5px 40px;
+    width: 45%;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer
+}
+
+.button-save{
+    background-color: #517ff6;
+    border: none;
+    color: white;
+}
+
+.button-cancel {
+    border: solid 1px black;
+}
+
+.button-save a{
+    color: white;
+    text-decoration: none;
+}
+
+.button-cancel a {
+    color: black;
+}
