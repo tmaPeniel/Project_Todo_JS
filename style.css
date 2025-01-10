@@ -52,19 +52,22 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 40%;
+    width: 50%;
     margin-left: 40px;
 }
 
 
 button{
     border: none;
-    width: 100px;
+    width: 30%;
     height: 50px;
+    padding: 10px;
     border-radius: 20px;
     cursor: pointer;
     font-size: 20px;
     background-color: #ffffffBF;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 button.active{
@@ -72,7 +75,7 @@ button.active{
 }
 
 button.add-task{
-    width: 350px;
+    width: 75%;
     height: 50px;
 }
 
@@ -108,5 +111,67 @@ button.add-task{
 }
 .task-list tbody td:nth-child(n+3){
     text-align: center;
+}
+
+@media screen and (max-width: 1160px)  {
+    .main{
+        width:90vw;
+        height: 70vh;
+    }
+    .main .nav{
+        width: 95%;
+    }
+
+    .task-list{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 900px)  {
+   button{
+    width: 30%;
+    height: 40px;
+    font-size: 0.9em;
+   }
+
+   button.add-task{
+    width: 75%;
+    height: 40px;
+    }
+
+    .task-list thead tr th{
+        font-size: 0.9em;
+    }
+
+    .task-list tbody td{
+        font-size: 0.7em;
+    }
+}
+
+@media screen and (max-width: 745px) {
+    button{
+        white-space: nowrap;
+        width: 30%;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .main .nav{
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .main .nav .add, .main .nav .filter{
+        display: flex;
+        margin:5px 0;
+        justify-content: center;
+    }
+    .main .nav .filter{
+        width: 90%;
+    }
+
+    button:not(.add){
+        margin: 0 2%
+    }
 }
 
