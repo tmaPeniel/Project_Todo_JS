@@ -24,8 +24,8 @@
     background-color: #ffffff80;
     border-radius: 30px;
     box-sizing: border-box;
-    width: 840px;
-    height: 770;
+    width: 1040px;
+    height: 560px;
 }
 
 .main h1{
@@ -38,12 +38,14 @@
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: flex-end;
     width: 100%;
     margin: 20px;
 }
 
 .main .nav .add{
-    width: 50%
+    width: 50%;
+    margin-right: 40px;
 }
 
 .main .nav .filter{
@@ -54,13 +56,14 @@
     margin-left: 40px;
 }
 
+
 button{
     border: none;
     width: 100px;
     height: 50px;
     border-radius: 20px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 20px;
     background-color: #ffffffBF;
 }
 
@@ -72,3 +75,38 @@ button.add-task{
     width: 350px;
     height: 50px;
 }
+
+
+.task-list{
+    background-color: #ffffffBF;
+    width: 100%;
+    height: 260px;
+    border-radius: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 10px;
+}
+
+.task-list thead th:not(:nth-child(2)){
+    width: 110px;
+}
+.task-list thead th:nth-child(2){
+    width: 200px;
+}
+
+
+
+.task-list thead tr th{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+.task-list tbody td:nth-child(1), td:nth-child(2){
+    padding: 10px 0 10px 0;
+}
+.task-list tbody td:nth-child(n+3){
+    text-align: center;
+}
+
