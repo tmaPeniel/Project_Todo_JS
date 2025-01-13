@@ -122,3 +122,39 @@ form .col2 .button{
     color: black;
     text-decoration: none;
 }
+
+@media screen and (max-width: 1160px)  {
+    .main{
+        width:90vw;
+        height: 70vh;
+    }
+
+    .form{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 700px)  {
+    .main{
+        height: 90%;
+    }
+
+    .form{
+        margin: 10px
+    }
+
+    .form h4{
+        text-align: center;
+    }
+
+    form{
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        width: 100%;
+    }
+    form .col1, form .col2{
+        width: 100%;
+    }
+}
