@@ -8,6 +8,11 @@
 
 textarea {
     resize: none; 
+    padding: 5px;
+}
+
+input{
+    padding:5px;
 }
 
 .background{
