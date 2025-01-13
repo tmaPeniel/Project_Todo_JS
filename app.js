@@ -6,3 +6,9 @@ filters.forEach(button=>{
         button.classList.add('active');
     })
 })
+
+const addTask = document.getElementById("add-task")
+console.log(addTask)
+addTask.addEventListener("click", ()=>{
+    window.location.href= "form.html";
+})
