@@ -93,7 +93,7 @@ form .col2 .button{
     grid-row: 5;
 }
 
-.button-save, .button-cancel{
+button, .button-save, .button-cancel{
     padding: 5px 40px;
     width: 45%;
     border-radius: 10px;
@@ -103,7 +103,8 @@ form .col2 .button{
     cursor: pointer
 }
 
-.button-save{
+button{
+    font-size: 17px;
     background-color: #517ff6;
     border: none;
     color: white;
