@@ -18,29 +18,29 @@
                     <div class="col1">
                         <div class="name">
                             <label for="nameName">Name: </label>
-                            <input type="text" name="nameName" id="" placeholder="Task name">
+                            <input type="text" id="nameName" placeholder="Task name">
                         </div>
                         <div class="description">
                             <label for="descriptionName">Description: </label>
-                            <textarea name="descriptionName" id="" placeholder="Task description"></textarea>
+                            <textarea id="descriptionName" placeholder="Task description"></textarea>
                         </div>
                         <div class="category">
                             <label for="categoryName">Category: </label>
-                            <input type="text" name="categoryName" id="" placeholder="Task category">
+                            <input type="text" id="categoryName" placeholder="Task category">
                         </div>
                         <div class="date">
                             <label for="dateName">Date: </label>
-                            <input type="date" name="dateName" id="" placeholder="dd/mm/yyyy">
+                            <input type="date" id="dateName" placeholder="dd/mm/yyyy">
                         </div>
                         <div class="time">
                             <label for="timeName">Time: </label>
-                            <input type="time" name="timeName" id="" placeholder="Task name">
+                            <input type="time" id="timeName" placeholder="Task name">
                         </div>
                     </div>
                     <div class="col2">
                         <div class="priority">
                             <label for="priorityName">Priority: </label>
-                            <select id="" name="priorityName">
+                            <select id="priorityName">
                                 <option value="high">High</option>
                                 <option value="medium">Medium</option>
                                 <option value="low">Low</option>
@@ -48,11 +48,11 @@
                         </div>
                         <div class="fullfillment">
                             <label for="fullfillmentName">Fullfillment: </label>
-                            <input type="range" id="" name="fullfillmentName" min="0" max="100" />
+                            <input type="range" id="fullfillmentName" min="0" max="100" step="5" value="0" />
                         </div>
                         <div class="button"> 
-                            <div class= "button-save"><a href="">Save</a></div>
-                            <div class="button-cancel"><a href="">Cancel</a></div>
+                            <button type="submit">Save</button>
+                            <div class="button-cancel"><a href="index.html">Cancel</a></div>
                         </div>
                     </div>
                 </form>
@@ -60,7 +60,7 @@
             
         </div>
     </div>
-    <script src="app.js"></script>
+    <script src="form.js"></script>
     
 </body>
 </html>

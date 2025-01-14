@@ -118,6 +118,14 @@ button.add-task{
     letter-spacing: 5px;
 }
 
+.button a.edit{
+    color: black
+}
+
+.button a.delete{
+    color: red
+}
+
 @media screen and (max-width: 1160px)  {
     .main{
         width:90vw;
