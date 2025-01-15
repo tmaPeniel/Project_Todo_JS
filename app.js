@@ -1,3 +1,5 @@
+import { getTasks } from "./Services/CRUD.js";
+
 const filters = document.querySelectorAll('button:not(.add-task)');
 filters.forEach(button=>{
     button.addEventListener("click", ()=>{
@@ -12,9 +14,16 @@ addTask.addEventListener("click", ()=>{
 })
 
 const editTasks = document.querySelectorAll('.edit');
-console.log(editTasks);
 editTasks.forEach(item=>{
     item.addEventListener("click", ()=>{
         window.location.href= "form.html";
     })
 })
+
+
+
+getTasks();
+
+
+
+

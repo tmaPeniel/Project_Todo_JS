@@ -89,6 +89,7 @@ button.add-task{
     align-items: flex-start;
     justify-content: center;
     padding: 10px;
+    overflow-y: auto;
 }
 
 .task-list thead th:not(:nth-child(2)){
@@ -98,13 +99,23 @@ button.add-task{
     width: 200px;
 }
 
-
+thead {
+    position: sticky;
+    top: 0;
+    background: white; 
+    z-index: 1; 
+}
 
 .task-list thead tr th{
     font-size: 20px;
     font-weight: 400;
 }
 
+.empty-message {
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+}
 
 .task-list tbody td:nth-child(1), td:nth-child(2){
     padding: 10px 0 10px 0;
