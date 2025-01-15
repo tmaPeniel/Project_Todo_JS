@@ -1,6 +1,3 @@
-/*
-    ----------Fonction----------
-*/ 
 export async function getTasks() {
     try{
         const response= await fetch('http://localhost:3000/0');
@@ -57,6 +54,9 @@ function displayTasks(tasks){
         const editButton = document.createElement('a');
         editButton.setAttribute('href', '#');
         editButton.classList.add('edit');
+        editButton.addEventListener('click', ()=>{
+            window.location.href=`form.html?id=${task.id}`
+        })
 
         const editIcon= document.createElement('i');
         editIcon.className='bx bxs-edit';
