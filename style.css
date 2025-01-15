@@ -105,6 +105,11 @@ button.add-task{
     font-weight: 400;
 }
 
+.empty-message {
+    text-align: center;
+    font-size: 15px;
+    color: gray;
+}
 
 .task-list tbody td:nth-child(1), td:nth-child(2){
     padding: 10px 0 10px 0;
