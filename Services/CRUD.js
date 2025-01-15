@@ -51,6 +51,7 @@ function displayTasks(tasks){
         const button = document.createElement('td');
         button.classList.add("button");
 
+        //Edit task
         const editButton = document.createElement('a');
         editButton.setAttribute('href', '#');
         editButton.classList.add('edit');
@@ -63,9 +64,22 @@ function displayTasks(tasks){
 
         editButton.appendChild(editIcon);
         
+
+        //Delete task
         const deleteButton = document.createElement('a');
         deleteButton.setAttribute('href', '#');
         deleteButton.classList.add('delete');
+        deleteButton.addEventListener('click', ()=>{
+            if (confirm('Voulez-vous vraiment supprimer cette tâche ?')) {
+                try {
+                    const taskId = task.id;
+                    getTasksById(taskId)
+                   
+                } catch (error) {
+                    console.error('Erreur lors de la connexion au serveur :', error);
+                }
+            }
+        })
 
         const deleteIcon= document.createElement('i');
         deleteIcon.className='bx bxs-trash';
@@ -88,5 +102,18 @@ function displayTasks(tasks){
         taskList.appendChild(taskLine);
     })   
 
+}
+
+async function getTasksById(taskId){
+    const response = await fetch(`http://localhost:3000/0/${taskId}`, {
+        method: 'DELETE',
+    });
+
+    if (response.ok) {
+        console.log(`Tâche avec l'ID ${taskId} supprimée`);
+        taskElement.remove(); 
+    } else {
+        console.error('Erreur lors de la suppression de la tâche :', response.statusText);
+    }
 }
 
